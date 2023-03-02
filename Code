@@ -26,13 +26,13 @@ section1:addTextbox("Notification", "Default", function(value, focusLost)
 print("Input", value)
 
 if focusLost then
-venyx:Notify("Title", value)
+Sarus:Notify("Title", value)
 end
 end)
 
 section2:addKeybind("Toggle Keybind", Enum.KeyCode.One, function()
 print("Activated Keybind")
-venyx:toggle()
+Sarus:toggle()
 end, function()
 print("Changed Keybind")
 end)
@@ -53,7 +53,7 @@ local colors = theme:addSection("Colors")
 
 for theme, color in pairs(themes) do -- all in one theme changer, i know, im cool
 colors:addColorPicker(theme, color, function(color3)
-venyx:setTheme(theme, color3)
+Sarus:setTheme(theme, color3)
 end)
 end
 
