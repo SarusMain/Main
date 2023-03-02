@@ -1,3 +1,5 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GreenDeno/Venyx-UI-Library/main/source.lua"))()
+
 if game.PlaceId == 155615604 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/SarusMain/Main/main/Code", true))()
 
@@ -5,5 +7,10 @@ elseif game.PlaceId == 8540346411 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/SarusMain/Main/main/Code", true))()
 
 else
-    print("Game Is Not Supported")
+    library:Notify(title, context, callback)
+    title <string> -> Game Is Not Supported
+    context <string> -> description of notification
+    callback <function> 
+        return (value)
+            value <boolean> -> accepted or cancelled
 end
