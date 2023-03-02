@@ -1,3 +1,9 @@
 if game.PlaceId == 155615604 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/SarusMain/Main/main/Code", true))()
+
+elseif game.PlaceId == 8540346411 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SarusMain/Main/main/Code", true))()
+
+else
+    print("Game Is Not Supported")
 end
